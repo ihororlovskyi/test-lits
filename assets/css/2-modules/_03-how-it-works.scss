@@ -6,7 +6,7 @@
 	color: $text-color1;
 	text-align: center;
 	padding: 105px 5% 35px;
-	@include outer-container;
+	@include clearfix;
 
 	h2 {
 		font-weight: 700;
@@ -21,8 +21,8 @@
 		@include outer-container;
 
 		@include media($desktop) {
-			@include span-columns(8);
-			@include shift(2);
+			@include span-columns(6);
+			@include shift(3);
 		}
 
 		article {
