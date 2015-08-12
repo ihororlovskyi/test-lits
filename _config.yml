@@ -1,6 +1,6 @@
 
 # Build settings
-baseurl: /test-logic
+baseurl: /test-lits
 markdown: kramdown
 permalink: /:title/
 
