@@ -7,8 +7,15 @@
 
 	.map {
 		width: 100%;
-		height: 450px;
-		margin-bottom: 70px;
+		height: 250px;
+
+		@include media($tablet) {
+			height: 350px;
+		}
+
+		@include media($desktop) {
+			height: 450px;
+		}
 
 		img { 
 			max-width: none;
@@ -33,15 +40,14 @@
 
 	footer {
 		color: $text-color2;
+		padding: 70px 5% 20px;
 		margin-bottom: 20px;
 		@include outer-container;
-		@include span-columns(10);
-		@include shift(1);
 
-		@include media($desktop) {
-			@include span-columns(6);
-			@include shift(3);
-		}
+		// @include media($desktop) {
+		// 	@include span-columns(10);
+		// 	@include shift(1);
+		// }
 
 		form {
 			margin-bottom: 25px;
@@ -52,9 +58,12 @@
 			}
 
 			@include media($desktop) {
-				@include span-columns(5);
+				padding: 0 8%;
 			}
 
+			textarea {
+				resize: none;
+			}
 			input[type="text"],
 			input[type="email"],
 			textarea {
@@ -70,16 +79,13 @@
 		.info {
 			margin-bottom: 25px;
 			@include span-columns(12);
-			@include shift(0);
 
 			@include media($tablet) {
 				@include span-columns(6);
-				@include shift(0);
 			}
 
 			@include media($desktop) {
-				@include span-columns(5);
-				@include shift(2);
+				padding-left: 8%;
 			}
 
 			p {

@@ -4,7 +4,7 @@
 .technologies {
 	background: $bg-color2;
 	color: $text-color2;
-	padding: 105px 0 40px;
+	padding: 105px 5% 40px;
 	@include clearfix;
 
 	h2 {
@@ -14,8 +14,6 @@
 
 	.items {
 		@include outer-container;
-		@include span-columns(10);
-		@include shift(1);
 
 		@include media($desktop) {
 			@include span-columns(6);

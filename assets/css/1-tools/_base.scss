@@ -26,6 +26,9 @@ h1 {
 }
 h2 {
 	font-size: 38px;
+	@include media($mobile) {
+		font-size: 30px;
+	}
 }
 h3 {
 	font-size: 20px;
