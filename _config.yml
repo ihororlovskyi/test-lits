@@ -1,0 +1,14 @@
+
+# Build settings
+baseurl: /test-logic
+markdown: kramdown
+permalink: /:title/
+
+port: 1114
+
+exclude: ['README.md']
+
+sass:
+  sass_dir: assets/css
+  style: :expanded
+  

@@ -1,0 +1,98 @@
+/*-------------------------------------------------------------------------*/
+/* # HEADER
+/*-------------------------------------------------------------------------*/
+.header {
+	background: $bg-color1;
+	color: $text-color1;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	header {
+		height: 80px;
+		@include transition(all 0.2s $ease-out-quad);
+		max-width: 1200px;
+		margin: 0 auto;
+
+		&.header-collapse {
+			height: 50px;
+		}
+
+		a.logo {
+			float: left;
+			position: relative;
+			top: 50%;
+			padding-left: 12px;
+			margin-top: -21px;
+
+			img {
+				width: 100%;
+				max-width: 150px;
+				height: auto;
+			}
+		}
+
+		a.mob-menu {
+			float: right;
+			position: relative;
+			top: 50%;
+			margin-top: -30px;
+			padding: 8px 12px;
+			display: none;
+			font-size: 40px;
+			line-height: 50px;
+			@include media($mobile) {
+				display: block;
+			}
+		}
+
+		nav {
+
+			@include media($mobile) {
+				position: absolute;
+				width: 100%;
+				top: 100%;
+				text-align: center;
+				padding-bottom: 1.75em;
+				background: $bg-color1;
+			}
+
+			@include media($tablet) {
+				float: right;
+				position: relative;
+				top: 50%;
+				margin-top: -13px;
+				display: block;
+			}
+
+			&.displaynone {
+				display: none;
+				@include media($tablet) {
+					display: block;
+				}
+			}
+
+			a {
+				color: #000;
+				padding: 8px 12px;
+				display: block;
+				font-size: 20px;
+				@include media($tablet) {
+					font-size: 15px;
+					float: left;
+					padding: 4px 6px;
+				}
+				@include media($desktop) {
+					padding: 4px 12px;
+				}
+
+				&.active,
+				&:hover {
+					color: $action-color;
+				}
+			}
+		}
+	}
+}

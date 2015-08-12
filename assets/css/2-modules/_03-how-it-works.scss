@@ -1,0 +1,58 @@
+/*-------------------------------------------------------------------------*/
+/* # HOW-IT-WORKS
+/*-------------------------------------------------------------------------*/
+.how-it-works {
+	background: $bg-color1;
+	color: $text-color1;
+	text-align: center;
+	padding: 105px 0 35px;
+	@include outer-container;
+
+	h2 {
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 25px;
+		margin-bottom: 1.75em;
+	}
+	
+	.items {
+		@include outer-container;
+		@include span-columns(10);
+		@include shift(1);
+
+		@include media($desktop) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+
+		article {
+			padding: 0 15px;
+
+			@include media($mobile) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
+
+			@include media($tablet) {
+				@include span-columns(4);
+				@include omega(3n);
+			}
+
+			img {
+				width: 100%;
+				max-width: 100px;
+				height: auto;
+				display: block;
+				margin: 0 auto 20px;
+			}
+
+			h5 {
+				color: #000;
+				margin-bottom: 1.75em;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,45 @@
+/*-------------------------------------------------------------------------*/
+/* # BRANDS
+/*-------------------------------------------------------------------------*/
+.brands {
+	background: $bg-color1;
+	color: $text-color1;
+	text-align: center;
+	padding: 115px 0 60px;
+	@include outer-container;
+
+	h2 {
+		font-weight: 700;
+	}
+
+	.items {
+		@include outer-container;
+		@include span-columns(10);
+		@include shift(1);
+
+		@include media($desktop) {
+			@include span-columns(8);
+			@include shift(2);
+		}
+
+		article {
+			padding: 25px 0;
+			@include span-columns(3);
+			@include omega(4n);
+
+			@include media($mobile) {
+				@include span-columns(6);
+				@include omega(2n);
+			}
+
+			img {
+				width: 100%;
+				max-width: 150px;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+

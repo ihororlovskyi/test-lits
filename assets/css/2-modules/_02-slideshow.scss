@@ -1,0 +1,57 @@
+/*-------------------------------------------------------------------------*/
+/* # SLIDESHOW
+/*-------------------------------------------------------------------------*/
+.slideshow {
+	background: $bg-color2;
+	color: $text-color2;
+	text-align: center;
+	padding: 200px 0 35px;
+	@include clearfix;
+
+	.item {
+		@include outer-container;
+		@include span-columns(10);
+		@include shift(1);
+
+		@include media($desktop) {
+			@include span-columns(6);
+			@include shift(3);
+		}
+	}
+
+	h2 {
+		
+	}
+
+	p {
+		font-size: 22.5px;
+		margin-bottom: 45px;
+	}
+
+	.btn {
+		
+	}
+
+	.owl-theme .owl-controls {
+		margin-top: 50px;
+
+		.owl-page {
+			span {
+				background: transparent;
+				border: 1px solid #fff;
+				width: 16px;
+				height: 16px;
+				margin: 1px 7px;
+				@include transition(all 0.2s $ease-out-quad);
+			}
+
+			&.active,
+			&:hover {
+				span {
+					border-width: 8px;
+				}
+			}
+		}
+	}
+}
+

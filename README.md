@@ -1,2 +1,7 @@
-# test-lits
-Web development of front-ent test task at LITS (Logic IT Solutions)
+# Ihor Orlovskyi
+
+Web development of Ihor Orlovskyi portfolio site
+
+Actual version here [ihororlovskyi.com](http://ihororlovskyi.com)
+
+Proudly hosted by [GitHub Pages](https://pages.github.com)
