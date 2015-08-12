@@ -5,13 +5,11 @@
 	background: $bg-color2;
 	color: $text-color2;
 	text-align: center;
-	padding: 200px 0 35px;
+	padding: 200px 5% 35px;
 	@include clearfix;
 
 	.item {
 		@include outer-container;
-		@include span-columns(10);
-		@include shift(1);
 
 		@include media($desktop) {
 			@include span-columns(6);
@@ -48,7 +46,7 @@
 			&.active,
 			&:hover {
 				span {
-					border-width: 8px;
+					border-width: 10px;
 				}
 			}
 		}

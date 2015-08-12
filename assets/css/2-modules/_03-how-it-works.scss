@@ -5,7 +5,7 @@
 	background: $bg-color1;
 	color: $text-color1;
 	text-align: center;
-	padding: 105px 0 35px;
+	padding: 105px 5% 35px;
 	@include outer-container;
 
 	h2 {
@@ -19,8 +19,6 @@
 	
 	.items {
 		@include outer-container;
-		@include span-columns(10);
-		@include shift(1);
 
 		@include media($desktop) {
 			@include span-columns(8);
