@@ -112,10 +112,12 @@ bittersMap.init();
 * mob-menu
 */
 $(document).ready(function() {
-	//responsive menu toggle
 	$(".mob-menu").click(function() {
 		$('header nav').toggleClass('displaynone');
-		});
+	});
+	$("header nav a").click(function() {
+		$('header nav').toggleClass('displaynone');
+	});
 });
 
 
